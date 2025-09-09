@@ -8,7 +8,8 @@ int gcd(int a, int b)
 int main()
 {
     int a, b;
-    scanf("Enter two numbers : %d %d", &a, &b);
+    printf("Enter two numbers: \n");
+    scanf("%d %d", &a, &b);
     printf("Greatest Common Divisor is : %d", gcd(a, b));
     return 0;
 }

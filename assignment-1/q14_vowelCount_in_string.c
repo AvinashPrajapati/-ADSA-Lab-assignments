@@ -4,6 +4,7 @@ int main()
 {
     char s[100];
     int i, count = 0;
+    printf("Enter any string/word of upto 100 chars : \n");
     scanf("%s", s);
     for (i = 0; s[i]; i++)
     {

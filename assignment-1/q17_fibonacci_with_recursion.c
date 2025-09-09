@@ -8,6 +8,7 @@ int fib(int n)
 int main()
 {
     int n, i;
+    printf("Enter the up to number: \n");
     scanf("%d", &n);
     for (i = 0; i < n; i++)
         printf("%d ", fib(i));

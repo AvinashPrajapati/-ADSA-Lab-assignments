@@ -2,7 +2,9 @@
 
 int main()
 {
-    int a = 10, b = 2, c = 20;
+    int a, b, c;
+    printf("Enter any three numbers : \n");
+    scanf("%d %d %d", &a, &b, &c);
     int largest = 0;
     if (largest < a)
     {

@@ -8,7 +8,8 @@ int digitSum(int n)
 int main()
 {
     int n;
-    scanf("Enter a number : %d", &n);
+    printf("Enter a number : \n");
+    scanf("%d", &n);
     printf("Digit sum of the number is : %d", digitSum(n));
     return 0;
 }

@@ -2,6 +2,7 @@
 int main()
 {
     int n, i, flag = 1;
+    printf("Enter any number : \n");
     scanf("%d", &n);
     if (n <= 1)
         flag = 0;

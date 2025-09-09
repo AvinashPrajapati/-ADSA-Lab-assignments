@@ -3,6 +3,7 @@ int main()
 {
     int unitsCosumed;
     int bill = 0;
+    printf("Enter the total units consumed : \n");
     scanf("%d", &unitsCosumed);
     if (unitsCosumed <= 100)
         bill = unitsCosumed * 5;

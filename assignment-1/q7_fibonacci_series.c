@@ -3,6 +3,8 @@
 int main()
 {
     int n = 8;
+    printf("Enter any upper limit number : \n");
+    scanf("%d", &n);
     int int0 = 0;
     int int1 = 1;
     for (int i = 0; i < n; i++)
