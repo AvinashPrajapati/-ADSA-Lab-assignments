@@ -3,7 +3,7 @@
 int main()
 {
     int n = 8;
-    printf("Enter any upper limit number : \n");
+    printf("Enter series length n : \n");
     scanf("%d", &n);
     int int0 = 0;
     int int1 = 1;

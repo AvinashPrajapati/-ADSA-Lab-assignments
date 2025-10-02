@@ -8,7 +8,7 @@ int fib(int n)
 int main()
 {
     int n, i;
-    printf("Enter the up to number: \n");
+    printf("Enter series length n: \n");
     scanf("%d", &n);
     for (i = 0; i < n; i++)
         printf("%d ", fib(i));

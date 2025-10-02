@@ -16,15 +16,22 @@ int main()
     {
     case 1:
         printf("Sum is : %lf\n", a + b);
+        break;
     case 2:
         printf("Substraction is : %lf\n", a - b);
+        break;
     case 3:
         printf("Multiplication is : %lf\n", a * b);
+        break;
     case 4:
-        printf("Division is : %lf\n", a / b);
+        if (b != 0)
+            printf("Division is : %lf\n", a / b);
+        else
+            printf("Error: Division by zero not allowed.\n");
+        break;
 
     default:
-        printf("Enter the currect operator : 1. +, 2. -, 3. /, 4. *.");
+        printf("Invalid operator, Enter the currect operator : 1. +, 2. -, 3. /, 4. *.");
     }
 
     return 0;

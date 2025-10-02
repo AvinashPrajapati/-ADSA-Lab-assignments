@@ -31,7 +31,7 @@ int search(int arr[], int l, int r, int x)
 int main()
 {
     int n, x, i;
-    printf("Enter number of book IDs: ");
+    printf("Enter number of books: ");
     scanf("%d", &n);
 
     int arr[n];
