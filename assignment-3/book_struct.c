@@ -18,11 +18,14 @@ int main()
     for (int i = 0; i < n; ++i)
     {
         printf("Book %d title: ", i + 1);
+
         scanf(" ");
         fgets(books[i].title, sizeof(books[i].title), stdin);
+
         size_t len = strlen(books[i].title);
         if (len && books[i].title[len - 1] == '\n')
             books[i].title[len - 1] = 0;
+
         printf("Author: ");
         fgets(books[i].author, sizeof(books[i].author), stdin);
         len = strlen(books[i].author);

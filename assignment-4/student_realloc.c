@@ -15,7 +15,7 @@ int main()
     printf("Enter initial number of students: ");
     scanf("%d", &n);
 
-    struct student *S = malloc(n * sizeof(struct student));
+    struct student *S = (struct student *)malloc(n * sizeof(struct student));
 
     for (int i = 0; i < n; i++)
     {
@@ -26,7 +26,7 @@ int main()
     printf("\nEnter number of extra students: ");
     scanf("%d", &extra);
 
-    S = realloc(S, (n + extra) * sizeof(struct student));
+    S = (struct student *)realloc(S, (n + extra) * sizeof(struct student));
 
     for (int i = n; i < n + extra; i++)
     {

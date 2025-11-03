@@ -10,8 +10,8 @@ struct student
 int main()
 {
     int n = 3;
-    struct student *arr1 = malloc(n * sizeof(struct student));
-    struct student *arr2 = calloc(n, sizeof(struct student));
+    struct student *arr1 = (struct student *)malloc(n * sizeof(struct student));
+    struct student *arr2 = (struct student *)calloc(n, sizeof(struct student));
 
     printf("Using malloc: id[0] = %d\n", arr1[0].id); // Garbage
     printf("Using calloc: id[0] = %d\n", arr2[0].id); // Zero

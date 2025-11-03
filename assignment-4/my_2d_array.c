@@ -14,10 +14,23 @@ int main()
     printf("Enter rows and cols: ");
     scanf("%d %d", &m.rows, &m.cols);
 
-    m.data = malloc(m.rows * sizeof(int *));
+    // Allocate memory for row pointers
+    m.data = (int **)malloc(m.rows * sizeof(int *));
+    if (m.data == NULL)
+    {
+        printf("Memory allocation failed!\n");
+        return 1;
+    }
+
+    // Allocate memory for each row
     for (int i = 0; i < m.rows; i++)
     {
-        m.data[i] = malloc(m.cols * sizeof(int));
+        m.data[i] = (int *)malloc(m.cols * sizeof(int));
+        if (m.data[i] == NULL)
+        {
+            printf("Memory allocation failed!\n");
+            return 1;
+        }
     }
 
     printf("Enter elements:\n");
@@ -39,10 +52,17 @@ int main()
         printf("\n");
     }
 
+    // Free memory
+    for (int i = 0; i < m.rows; i++)
+    {
+        free(m.data[i]);
+    }
+    // Free memory
     for (int i = 0; i < m.rows; i++)
     {
         free(m.data[i]);
     }
     free(m.data);
+
     return 0;
 }
