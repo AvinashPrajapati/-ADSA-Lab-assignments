@@ -57,8 +57,19 @@ void display()
 
 int main()
 {
+    printf("Inserting node(10) at End:");
     insertAtEnd(10);
+    display();
+
+    printf("Inserting node(11) at End:");
+    insertAtEnd(11);
+    display();
+
+    printf("Inserting node(5) at beginning:");
     insertAtBeginning(5);
+    display();
+
+    printf("Inserting node(20) at end");
     insertAtEnd(20);
     display();
     return 0;

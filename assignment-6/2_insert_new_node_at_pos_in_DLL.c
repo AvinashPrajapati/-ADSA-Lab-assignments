@@ -53,7 +53,10 @@ int main()
     insertAtPos(10, 1);
     insertAtPos(20, 2);
     insertAtPos(15, 2);
+    printf("Old List Nodes: ");
+    display();
     insertAtPos(15, 1);
+    printf("New List Nodes: ");
     display();
     return 0;
 }

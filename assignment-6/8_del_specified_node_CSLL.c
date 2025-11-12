@@ -69,7 +69,9 @@ int main()
     insertEnd(10);
     insertEnd(20);
     insertEnd(30);
+    printf("Original List Node value : ");
     display();
+    printf("After deletion List Node value : ");
     deleteValue(20);
     display();
     return 0;

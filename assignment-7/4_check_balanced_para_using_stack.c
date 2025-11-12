@@ -10,7 +10,7 @@ struct Node *top = NULL;
 
 void push(char c)
 {
-    struct Node *newNode = malloc(sizeof(struct Node));
+    struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
     newNode->data = c;
     newNode->next = top;
     top = newNode;

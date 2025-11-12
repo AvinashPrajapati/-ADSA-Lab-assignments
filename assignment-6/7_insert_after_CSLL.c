@@ -64,6 +64,9 @@ int main()
     insertEnd(10);
     insertEnd(20);
     insertEnd(30);
+    printf("Original List Node value : ");
+    display();
+    printf("After insertiona List Node value : ");
     insertAfter(20, 25);
     display();
     return 0;

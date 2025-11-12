@@ -1,22 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// void print(const char s[30])
-// {
-//     for (int i = 0; s[i] != '\0'; i++)
-//     {
-//         printf("%c", s[i]);
-//     }
-//     printf("\n");
-// }
-
-// int main()
-// {
-//     char c[] = "avinash";
-//     print("avinash");
-//     return 0;
-// }
-
 #include <stdio.h>
 #include <stdlib.h>
 

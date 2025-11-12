@@ -33,7 +33,7 @@ void findLengthAndMiddle()
     temp = head;
     for (int i = 1; i < mid; i++)
         temp = temp->next;
-    printf("Length: %d, Middle: %d\n", length, temp->data);
+    printf("Linked List Length: %d, Middle Node Value is : %d\n", length, temp->data);
 }
 
 int main()

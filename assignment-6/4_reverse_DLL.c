@@ -50,8 +50,10 @@ int main()
     insert(10);
     insert(20);
     insert(30);
+    printf("Orignal Linked List: ");
     display();
     reverse();
+    printf("Reversed Linked List: ");
     display();
     return 0;
 }

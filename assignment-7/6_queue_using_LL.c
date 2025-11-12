@@ -10,7 +10,7 @@ struct Node *front = NULL, *rear = NULL;
 
 void enqueue(int val)
 {
-    struct Node *newNode = malloc(sizeof(struct Node));
+    struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
     newNode->data = val;
     newNode->next = NULL;
     if (rear == NULL)

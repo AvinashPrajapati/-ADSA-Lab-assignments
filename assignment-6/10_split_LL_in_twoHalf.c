@@ -59,18 +59,33 @@ void display(struct Node *last)
     } while (temp != last->next);
     printf("\n");
 }
+void displayFromHead(struct Node *head)
+{
+    if (!head)
+        return;
+    struct Node *temp = head;
+    do
+    {
+        printf("%d ", temp->data);
+        temp = temp->next;
+    } while (temp != head);
+    printf("\n");
+}
 
 int main()
 {
     for (int i = 10; i <= 60; i += 10)
         insertEnd(i);
 
+    printf("Original: ");
+    display(last);
+
     struct Node *head1 = NULL, *head2 = NULL;
     splitList(last, &head1, &head2);
 
     printf("First half: ");
-    display(head1);
+    displayFromHead(head1);
     printf("Second half: ");
-    display(head2);
+    displayFromHead(head2);
     return 0;
 }

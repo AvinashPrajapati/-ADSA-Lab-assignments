@@ -53,8 +53,10 @@ int main()
     insert(30);
     insert(20);
     insert(10);
+    printf("Orignal Linked List: ");
     display();
     deleteValue(20);
+    printf("After deleting the first occured target element, Linked List: ");
     display();
     return 0;
 }
